@@ -1,0 +1,92 @@
+/* Venue Hall Container */
+.banquet-halls-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/*Venue Hall */
+.banquet-hall {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 0 10px;
+  box-shadow: 0 0 5px #06A3DA ;
+}
+
+.banquet-hall img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Venue Hall Info */
+.banquet-hall-info {
+  padding: 20px;
+  position: relative;
+}
+
+.banquet-hall-info h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: rgb(210, 4, 45);
+}
+
+.banquet-hall-info p {
+  margin: 0 0 20px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+}
+
+.slider img {
+  scroll-snap-align: start;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+.slider img.active {
+  border-color: #06A3DA ;
+}
+
+/* Pricing Tag */
+.pricing-tag {
+  position: absolute;
+  top: 4.5px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color:whitesmoke;
+  background-color: #06A3DA ;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Pricing Button */
+.pricing-button {
+  display: block;
+  width: 100%;
+  background-color: #06A3DA ;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
